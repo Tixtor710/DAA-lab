@@ -1,4 +1,3 @@
-
 def insertion_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
@@ -9,7 +8,10 @@ def insertion_search(arr, target):
     arr.append(target)
     return len(arr) - 1
 
-arr = [1, 2, 3, 4, 5]
+arr = []
+for i in range(int(input("Enter the number of elements in the array: "))):
+    arr.append(int(input("Enter the element: ")))
+
 target = int(input("Enter a number to search: "))
 
-print(insertion_search(arr, target)) 
+print(insertion_search(arr, target))
