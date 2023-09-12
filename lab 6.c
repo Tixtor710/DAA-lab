@@ -44,8 +44,7 @@ void merge(int arr[], int l, int m, int r)
 		k++;
 	}
 
-	// Copy the remaining elements of R[],
-	// if there are any
+
 	while (j < n2) {
 		arr[k] = R[j];
 		j++;
@@ -53,8 +52,6 @@ void merge(int arr[], int l, int m, int r)
 	}
 }
 
-// l is for left index and r is right index of the
-// sub-array of arr to be sorted
 void mergeSort(int arr[], int l, int r)
 {
 	if (l < r) {
@@ -68,7 +65,7 @@ void mergeSort(int arr[], int l, int r)
 	}
 }
 
-// Function to print an array
+
 void printArray(int A[], int size)
 {
 	int i;
@@ -77,7 +74,7 @@ void printArray(int A[], int size)
 	printf("\n");
 }
 
-// Driver code
+
 int main()
 {
 	int arr[] = { 12, 11, 13, 5, 6, 7 };
@@ -92,3 +89,4 @@ int main()
 	printArray(arr, arr_size);
 	return 0;
 }
+
